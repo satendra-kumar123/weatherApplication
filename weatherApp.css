@@ -1,0 +1,123 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* soft blue-pink weather gradient */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 360px;
+        background: rgba(3, 3, 3, 0.759);
+        backdrop-filter: blur(20px);
+        border-radius: 25px;
+        padding: 30px 25px;
+        color: white;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all 0.4s ease;
+    }
+
+    .search {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .search input {
+        flex: 1;
+        padding: 10px 15px;
+        border-radius: 12px 0 0 12px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .search button {
+        padding: 10px 20px;
+        background: linear-gradient(to right, #36D1DC, #5B86E5);
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 0 12px 12px 0;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .search button:hover {
+        background: linear-gradient(to right, #5B86E5, #36D1DC);
+    }
+
+    .weather-temperature {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .weather-temperature img {
+        width: 120px;
+        margin-bottom: 10px;
+        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    }
+
+    .weather-temperature h2 {
+        font-size: 46px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .weather-temperature h4 {
+        font-size: 20px;
+        font-weight: 400;
+        opacity: 0.9;
+    }
+
+    .weather {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .weather-humidity,
+    .weather-wind {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .weather-humidity:hover,
+    .weather-wind:hover {
+        transform: translateY(-5px);
+    }
+
+    .weather-humidity img,
+    .weather-wind img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .weather-humidity h6,
+    .weather-wind h6 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .weather-humidity p,
+    .weather-wind p {
+        font-size: 12px;
+        opacity: 0.8;
+        text-transform: capitalize;
+    }
